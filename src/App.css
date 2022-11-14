@@ -41,6 +41,25 @@
 }
 
 .container {
-  width: 60%;
+  width: 50%;
   margin: auto;
+}
+
+.add {
+  display: flex;
+  margin: 10px 20px;
+}
+
+.add input {
+  flex-grow: 1;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.add button {
+  background-color: rgb(71, 71, 136);
+  color: blue;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
 }
