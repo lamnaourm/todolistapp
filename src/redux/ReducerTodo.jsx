@@ -1,4 +1,4 @@
-import * as ActionsType from './ActionsType'
+import * as ActionsType from "./ActionsType";
 
 const initial_state = {
   lastid: 3,
@@ -30,8 +30,14 @@ const ReducerTodo = (state = initial_state, action) => {
           ...state.tasks,
           { id: state.lastid + 1, task: action.payload, completed: false },
         ],
-        lastid: state.lastid+1,
+        lastid: state.lastid + 1,
       };
+    case ActionsType.COMPLETE_TASK:
+        var taches = state.tasks.map(item => item.id==action.payload?{...item, completed:true}:item);
+        return {...state, tasks:taches}
+    case ActionsType.DELETE_TASK:
+        var taches = state.tasks.filter(item => item.id != action.payload);
+        return {...state, tasks:taches}
   }
   return state;
 };
