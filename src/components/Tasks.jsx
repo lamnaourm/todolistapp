@@ -8,7 +8,7 @@ const Tasks = () => {
     return (
         <div>
             {
-                taches.map(item => <Task task={item} />)
+                taches.map(item => <Task key={item.id} task={item} />)
             }
         </div>
     );
