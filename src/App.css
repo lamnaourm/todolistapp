@@ -63,3 +63,36 @@
   padding: 10px;
   border-radius: 2px;
 }
+
+.information {
+  text-align: center;
+  border: 1px solid #000;
+  background-color: antiquewhite;
+}
+
+.information h2 {
+  font-size: 20px;
+}
+
+.information h2:nth-child(2) {
+  color: rgb(110, 18, 18);
+}
+
+.information h2:nth-child(3) {
+  color: rgb(19, 141, 70);
+}
+
+.delete {
+  display: flex;
+  gap: 5px;  
+}
+
+.delete button{
+  flex-grow: 1;
+  padding: 10px;
+  background-color: rgb(177, 65, 5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
